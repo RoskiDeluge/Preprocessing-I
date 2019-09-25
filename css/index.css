@@ -152,16 +152,21 @@ body {
 }
 .main-container .intro-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 80%;
 }
 .main-container .intro-content img {
   width: 60%;
+  border-radius: 0.5rem;
 }
 .main-container .intro-content h1 {
   font-family: impact;
   color: gray;
   font-size: 2.5rem;
+}
+.main-container .intro-content h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
 }
 .main-container .intro-content p {
   font-family: 'Ubuntu', sans-serif;
