@@ -237,10 +237,26 @@ body {
   color: gray;
   font-size: 2rem;
 }
+.main-container .last-content table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.main-container .last-content table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 .main-container .last-content table th {
   font-family: helvetica;
   font-weight: bold;
+  text-align: left;
+  padding: 1rem;
 }
 .main-container .last-content table td {
   font-family: 'Ubuntu', sans-serif;
+  padding: 1rem;
+}
+.main-container footer {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  color: gray;
 }

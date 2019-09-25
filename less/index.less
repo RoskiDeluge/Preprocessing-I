@@ -187,14 +187,32 @@ html, body {
 			.h2style();
 		}
 		table {
+			width: 100%;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+
 			th {
 				font-family: @navfont;
 				font-weight: bold;
+				text-align: left;
+				padding: 1rem;
 			}
+
 			td {
 				font-family: @paragfont;
+				padding: 1rem;
 			}
 		}
+	}
+
+	footer {
+		font-family: @paragfont;
+		text-align: center;
+		color: gray;
 	}
 
 }
