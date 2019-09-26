@@ -105,6 +105,9 @@ html, body {
 			text-decoration: none;
 			color: @navfontcolor;
 			font-family: @navfont;
+			@media (max-width: 500px) {
+				padding: .5rem;
+			}
 		}
 
 		a:hover {
@@ -137,14 +140,18 @@ html, body {
 			.flexify();
 			flex-direction: column;
 			justify-content: center;
-			align-items: center;
+			align-items: flex-start;
 			width: 100%;
 			margin-left: 2.5rem;
+			@media (max-width: 500px) {
+				align-items: center;
+			}
 
 			h1 {
 				font-family: @headlinefont;
 				color: @headlinecolor;
 				font-size: 2.5rem;
+				margin-bottom: 1rem;
 			}
 	
 			h2 {
@@ -162,6 +169,7 @@ html, body {
 	
 			button {
 				.buttonstyle();
+				margin-top: 1rem;
 			}
 		}
 	}
