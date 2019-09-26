@@ -155,7 +155,7 @@ body {
 }
 .main-container header nav {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media (max-width: 500px) {
   .main-container header nav {
@@ -188,8 +188,7 @@ body {
   }
 }
 .main-container .intro-content img {
-  width: 30rem;
-  height: 30rem;
+  width: 50rem;
   border-radius: 0.5rem;
 }
 @media (max-width: 500px) {
@@ -302,6 +301,20 @@ body {
 .main-container .last-content table td {
   font-family: 'Ubuntu', sans-serif;
   padding: 1rem;
+}
+.main-container address {
+  display: flex;
+  flex-direction: column;
+}
+.main-container address h2 {
+  font-family: impact;
+  color: gray;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main-container address p {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0.5rem;
 }
 .main-container footer {
   font-family: 'Ubuntu', sans-serif;

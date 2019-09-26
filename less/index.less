@@ -94,7 +94,8 @@ html, body {
 
 	header nav {
 		.flexify();
-		justify-content: end;
+		justify-content: flex-end;
+
 		@media (max-width: 500px) {
 			flex-direction: column;
 			align-items: center;
@@ -125,9 +126,10 @@ html, body {
 		}
 
 		img {
-			width: 30rem;
-			height: 30rem;
+			width: 50rem;
+			// height: 30rem;
 			border-radius: .5rem;
+
 			@media (max-width: 500px) {
 				width: 15rem;
 				height: 15rem;
@@ -240,6 +242,22 @@ html, body {
 				font-family: @paragfont;
 				padding: 1rem;
 			}
+		}
+	}
+
+	address {
+		.flexify();
+		flex-direction: column;
+		h2 {
+			font-family: @headlinefont;
+			color: @headlinecolor;
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			font-family: @paragfont;
+			padding: .5rem;
 		}
 	}
 
