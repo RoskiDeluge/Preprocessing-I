@@ -95,6 +95,10 @@ html, body {
 	header nav {
 		.flexify();
 		justify-content: end;
+		@media (max-width: 500px) {
+			flex-direction: column;
+			align-items: center;
+		}
 
 		a {
 			padding: 1rem;
@@ -112,10 +116,21 @@ html, body {
 	.intro-content {
 		.flexify();
 		width: 80%;
+		@media (max-width: 500px) {
+			flex-direction: column;
+			align-items: center;
+		}
 
 		img {
-			width: 60%;
+			width: 30rem;
+			height: 30rem;
 			border-radius: .5rem;
+			@media (max-width: 500px) {
+				width: 15rem;
+				height: 15rem;
+				margin: 1rem;
+			}
+			
 		}
 
 		.intro-content-1 {
@@ -123,7 +138,7 @@ html, body {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			width: 50%;
+			width: 100%;
 			margin-left: 2.5rem;
 
 			h1 {
@@ -153,10 +168,18 @@ html, body {
 
 	.main-content {
 		.flexify();
+		@media (max-width: 500px) {
+			flex-direction: column;
+			// align-items: center;
+			width: 100%;
+		}
 
 		.main-content-1 {
 			width: 50%;
 			margin: .5rem;
+			@media (max-width: 500px) {
+				width: 100%;
+			}
 
 			h2 {
 				.h2style();
@@ -173,6 +196,9 @@ html, body {
 				border-radius: .2rem;
 				width: 40%;
 				margin-top: 1rem;
+				@media (max-width: 500px) {
+					width: 100%;
+				}
 
 				li {
 					border-bottom: 1px solid black;
