@@ -1,1 +1,323 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.flexify {
+  display: flex;
+}
+.buttonstyle {
+  width: 10rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-family: helvetica;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.h2style {
+  font-family: impact;
+  color: gray;
+  font-size: 2rem;
+}
+.main-container {
+  margin: 5%;
+}
+.main-container header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .main-container header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-container header nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-family: helvetica;
+}
+@media (max-width: 500px) {
+  .main-container header nav a {
+    padding: 0.5rem;
+  }
+}
+.main-container header nav a:hover {
+  color: gray;
+}
+.main-container .intro-content {
+  display: flex;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .main-container .intro-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-container .intro-content img {
+  width: 50rem;
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .main-container .intro-content img {
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+  }
+}
+.main-container .intro-content .intro-content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 2.5rem;
+}
+@media (max-width: 500px) {
+  .main-container .intro-content .intro-content-1 {
+    align-items: center;
+  }
+}
+.main-container .intro-content .intro-content-1 h1 {
+  font-family: impact;
+  color: gray;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.main-container .intro-content .intro-content-1 h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+}
+.main-container .intro-content .intro-content-1 p {
+  font-family: 'Ubuntu', sans-serif;
+}
+.main-container .intro-content .intro-content-1 hr {
+  width: 90%;
+}
+.main-container .intro-content .intro-content-1 button {
+  width: 10rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-family: helvetica;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.main-container .main-content {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .main-container .main-content {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.main-container .main-content .main-content-1 {
+  width: 50%;
+  margin: 0.5rem;
+}
+@media (max-width: 500px) {
+  .main-container .main-content .main-content-1 {
+    width: 100%;
+  }
+}
+.main-container .main-content .main-content-1 h2 {
+  font-family: impact;
+  color: gray;
+  font-size: 2rem;
+}
+.main-container .main-content .main-content-1 p {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 1rem;
+}
+.main-container .main-content .main-content-1 ul {
+  font-family: 'Ubuntu', sans-serif;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  width: 40%;
+  margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  .main-container .main-content .main-content-1 ul {
+    width: 100%;
+  }
+}
+.main-container .main-content .main-content-1 ul li {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+.main-container .last-content h2 {
+  font-family: impact;
+  color: gray;
+  font-size: 2rem;
+}
+.main-container .last-content table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.main-container .last-content table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.main-container .last-content table th {
+  font-family: helvetica;
+  font-weight: bold;
+  text-align: left;
+  padding: 1rem;
+}
+.main-container .last-content table td {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1rem;
+}
+.main-container address {
+  display: flex;
+  flex-direction: column;
+}
+.main-container address h2 {
+  font-family: impact;
+  color: gray;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main-container address p {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0.5rem;
+}
+.main-container footer {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  color: gray;
+}
